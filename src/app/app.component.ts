@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Pruebita';
+  conVerMas = 0;
+
+  clickVerMas(){
+    this.conVerMas++;
+  alert("Precinando Ver Mas");
+  console.log(this.conVerMas);
+
+
+  }
+
 }

@@ -11,22 +11,22 @@
     <ul class="navbar-nav mr-auto">
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" (click)="click_Buscar()">Buscar</button>
       </form>
       <li class="nav-item active">
-        <a class="nav-link" data-toggle="collapse" href="#login" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-weight: bold">Iniciar Sesion <span class="sr-only">(current)</span></a>   
+        <a class="nav-link" data-toggle="collapse" href="#login" role="button" aria-expanded="false" aria-controls="collapseExample" style="font-weight: bold" (click)="click_Iniciar()">Iniciar Sesion <span class="sr-only">(current)</span></a>   
       </li>
       <app-login class="collapse multi-collapse" style="color:white" id="login"></app-login>
       <li class="nav-item" >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carrito</a>
+        <a class="nav-link" href="#"  (click)="click_Carrito()" >Carrito</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Sugerencia</a>
+        <a class="nav-link" (click)="click_Sugerencias()" href="#">Sugerencia</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Ver pructos</a>
+        <a class="nav-link" href="#" (click)="click_VerProducto()" >Ver pructos</a>
       </li>
     </ul>
    
@@ -36,4 +36,5 @@
   
   
 </nav>
+
 

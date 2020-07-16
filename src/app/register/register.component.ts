@@ -7,10 +7,10 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  contador_de_clicks = 1;
-  nombre: string="Leoanrdo";
-  email: string= 'leonardo.roldan1139@gmail.com';
-  contrasenia: string ='chidochido';
+  contador_de_clicks = 0;
+  nombre: string="";
+  email: string= '';
+  contrasenia: string ='';
   constructor() { }
       
   ngOnInit() {
